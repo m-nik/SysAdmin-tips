@@ -3,7 +3,7 @@
 ```sql
 USE [master]
 -- on a server
-SELECT [sid], [name] FROM [syslogins] WHERE [name] = 'ziture';
+SELECT [sid], [name] FROM [syslogins] WHERE [name] = 'anyname';
 -- on another server
-CREATE LOGIN ziture WITH PASSWORD = N'nae0haiW6voaihUob6ahlaAeyl6hMiequw1', sid=0x74C1618EDB2215478CEC4D52B34F6629;
+CREATE LOGIN anyname WITH PASSWORD = N'anypassword', sid=0x74C1619EDB2215835CEF4D52B34F6629;
 ```
