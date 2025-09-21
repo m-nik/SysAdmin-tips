@@ -18,7 +18,7 @@ sudo parted /dev/sdb
 ```
 OR
 ```sh
-cfdisk
+cfdisk /dev/sdb
 ```
 
 
