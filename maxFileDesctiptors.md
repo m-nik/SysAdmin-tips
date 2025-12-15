@@ -1,3 +1,6 @@
+# fix ulimit
+https://docs.fluentd.org/installation/before-install
+
 ```sh
 ulimit -n
 1024
