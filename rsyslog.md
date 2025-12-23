@@ -1,6 +1,7 @@
 
 
 # Remote logs using rsyslog
+/etc/rsyslog.d/19-remote-udp.conf
 ```
 module(load="imudp")
 input(type="imudp" port="514")
@@ -12,4 +13,7 @@ if ($inputname == "imudp") then {
     stop
 }
 ```
-
+```sh
+sudo mkdir /var/log/remote
+sudo chown syslog:adm /var/log/remote
+```
