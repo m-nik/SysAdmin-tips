@@ -17,3 +17,8 @@ if ($inputname == "imudp") then {
 sudo mkdir /var/log/remote
 sudo chown syslog:adm /var/log/remote
 ```
+
+
+### Recieve standalone ESXi logs
+Manage -> System -> Advanced Settings -> syslog.global.logHost=udp://IP:514
+Networking -> Firewall Rules -> Allow Outgoing syslog
